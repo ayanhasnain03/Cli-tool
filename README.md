@@ -1,112 +1,142 @@
-# create-exs
+<!--
+  ⚡ create-exs README
+  A blazing-fast CLI to scaffold customizable Node.js backends.
+-->
 
-**`create-exs`** is a command-line tool designed to help you quickly scaffold a Node.js backend project with customizable configurations. With support for MongoDB, GraphQL, Docker, ESLint, and more, this tool helps you save time and reduce boilerplate in your backend setup.
+# ⚡ create-exs
+
+[![npm version](https://img.shields.io/npm/v/create-exs?style=flat-square)](https://www.npmjs.com/package/create-exs)  
+[![License: MIT](https://img.shields.io/npm/l/create-exs?style=flat-square)](LICENSE)  
+
+
+> **create-exs** is a blazing-fast CLI to scaffold **customizable** Node.js backend projects with TypeScript, MongoDB, GraphQL, Docker, ESLint, and more—powered by clean code and developer love.
+
+---
+
+## 🚀 Why create-exs?
+
+- ✨ **Zero Boilerplate** — Eliminate repetitious setup steps  
+- 🔧 **Fully Configurable** — Pick only the tech you need  
+- ⚡ **Guided Prompts** — Get your project up in seconds  
+- 🏗️ **Best Practices** — Folder structure & defaults you’ll love  
 
 ---
 
 ## ✨ Features
 
-- **Customizable Setup** – Pick what you need: MongoDB, GraphQL, Docker, ESLint, and more.
-- **Fast & Efficient** – Set up your backend in seconds through guided prompts.
-- **Scalable Structure** – Best practices for file structure, config management, and path aliases.
-- **Built-in Dev Tools** – Docker, .env, Morgan, CORS, error handling, and TypeScript support.
+- **Customizable Stack**: MongoDB, GraphQL, CORS, Docker, ESLint, Prettier, and more  
+- **TypeScript Ready**: Full TS support and `@/src` path aliases  
+- **Built-in Dev Tools**: Morgan logger, custom error handlers, `.env` support  
+- **Docker Support**: Auto-generated Dockerfile for containerization  
 
 ---
 
 ## 📦 Installation
 
-### Global
+You can use `create-exs` **without** installing it globally, thanks to `npx`, or install it in your project:
 
 ```bash
+# Recommended: run via npx (always latest)
+npx create-exs
+
+# Or globally:
 npm install -g create-exs
-Local (per project)
+create-exs
 
+# Or locally (per project):
 npm install create-exs
-🚀 Usage
-Run the CLI with:
+npx create-exs
+🔗 npm package: https://www.npmjs.com/package/create-exs
 
+⚙️ Usage
+Run
 
 npx create-exs
-You’ll be prompted to choose options for your project setup:
+Answer prompts to tailor your stack:
 
-Project Name – The folder name and app name.
+Project Name
 
-Preferred Language – JavaScript or TypeScript.
+Language (JavaScript / TypeScript)
 
-Use MongoDB – Enable MongoDB with Mongoose.
+MongoDB (Mongoose)
 
-Use GraphQL – Add Apollo Server to your backend.
+GraphQL (Apollo Server)
 
-Enable CORS – Add CORS middleware for cross-origin support.
+CORS Middleware
 
-Use Error Handler – Setup custom error handling middleware.
+Error Handler
 
-Use .env File – Automatically generate an environment file.
+.env File
 
-Use Morgan – Add logging middleware for request logging.
+Morgan Logger
 
-Use Docker – Generate Dockerfile for containerization.
+Dockerfile
 
-Use ESLint – Add linting with customizable rules.
+ESLint & Prettier
 
-Path Alias (@/src) – Set up cleaner imports with TypeScript path aliases.
+Path Aliases (@/src)
 
-Auto-install Dependencies – Automatically install everything after generation.
+Auto-install Dependencies
 
-🧱 Project Structure
-The generated project includes:
-
-✅ Express Server Setup
-
-📦 Optional MongoDB & GraphQL Integration
-
-🧩 CORS & Error Handler Middleware
-
-🐳 Dockerfile for container deployment
-
-🔧 ESLint for code linting
-
-🔐 .env environment file
-
-🔍 Morgan for logging
-
-🗂️ Organized folder structure
-
-⚡ @/ path alias for cleaner imports (TypeScript)
-
-📂 Example Workflow
-Install create-exs globally or use npx
-
-Run:
+Start coding!
 
 
-npx create-exs
-Answer the prompts
+cd your-project-name
+npm run dev
+🗂️ Project Structure
+text
+Copy
+Edit
+your-project-name/
+├── src/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   └── index.(js|ts)
+├── .env
+├── .eslintrc.js
+├── Dockerfile
+├── package.json
+└── README.md
+✅ Express setup
 
-Done! Start developing 🚀
+🍃 Optional MongoDB & GraphQL
+
+🌐 CORS & error middleware
+
+🐳 Docker support
+
+🧹 ESLint + Prettier
+
+🔐 .env support
+
+🕵️ Morgan logger
+
+🧭 Path aliasing
 
 🛠️ Contributing
-Contributions are welcome! Feel free to:
+Contributions are very welcome!
 
-🐛 Submit bug reports
+Fork the repo
 
-📘 Improve documentation
+Create your feature branch (git checkout -b feature/awesome-feature)
 
-🌟 Add new features
+Commit your changes (git commit -m 'feat: add awesome feature')
 
-Just fork the repo and open a PR.
+Push to the branch (git push origin feature/awesome-feature)
+
+Open a Pull Request
+
+Please read CONTRIBUTING.md for details.
 
 📄 License
-MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License — see the LICENSE file for details.
 
 👤 Author
 Ayan Hasnain
+🔗 GitHub: @ayanhasnain03
+🔗 LinkedIn: https://www.linkedin.com/in/ayan-hasnain-543475260/
 
-Made with ❤️ for developers who love speed, flexibility, and clean code.
-
-vbnet
-Copy
-Edit
-
-Let me know if you'd like a version with custom badges, a GIF demo, or GitHub action shields too!
-```
+Made with ❤️ for developers who love clean, fast, and flexible codebases.
