@@ -1,101 +1,112 @@
-create-exs
-create-exs is a command-line tool designed to help you quickly scaffold a Node.js backend project with customizable configurations. It allows you to choose from a variety of technologies and features such as MongoDB, GraphQL, CORS, Docker, ESLint, and more. This tool streamlines the process of setting up a Node.js backend, reducing manual configurations and saving you time on repetitive tasks.
+# create-exs
 
-Features
-Customizable Setup: Select which technologies and configurations to include in your project.
+**`create-exs`** is a command-line tool designed to help you quickly scaffold a Node.js backend project with customizable configurations. With support for MongoDB, GraphQL, Docker, ESLint, and more, this tool helps you save time and reduce boilerplate in your backend setup.
 
-Support for Popular Tech: MongoDB, GraphQL, CORS, ESLint, Docker, and more.
+---
 
-Project Structure: Generate a well-organized project with best practices, including Docker and environment management.
+## ✨ Features
 
-Fast and Efficient: Automate the process of setting up your backend with just a few simple prompts.
+- **Customizable Setup** – Pick what you need: MongoDB, GraphQL, Docker, ESLint, and more.
+- **Fast & Efficient** – Set up your backend in seconds through guided prompts.
+- **Scalable Structure** – Best practices for file structure, config management, and path aliases.
+- **Built-in Dev Tools** – Docker, .env, Morgan, CORS, error handling, and TypeScript support.
 
-Installation
-You can install create-exs either globally or locally, depending on your needs.
+---
 
-Global Installation
-To install create-exs globally on your machine, use the following command:
+## 📦 Installation
 
+### Global
+
+```bash
 npm install -g create-exs
-Local Installation
-Alternatively, you can install create-exs locally within your project:
+Local (per project)
 
 npm install create-exs
-Usage
-Once installed, you can scaffold a new project using the following command:
+🚀 Usage
+Run the CLI with:
+
 
 npx create-exs
-create-exs will prompt you with a series of configuration questions to help tailor the setup to your needs. During the setup, you'll choose options for:
+You’ll be prompted to choose options for your project setup:
 
-Project Name: Choose a name for your project.
+Project Name – The folder name and app name.
 
-Preferred Language: Select between JavaScript or TypeScript.
+Preferred Language – JavaScript or TypeScript.
 
-Use MongoDB: Decide if you want to integrate MongoDB for your database.
+Use MongoDB – Enable MongoDB with Mongoose.
 
-Use GraphQL: Enable GraphQL for API development.
+Use GraphQL – Add Apollo Server to your backend.
 
-Enable CORS: Set up Cross-Origin Resource Sharing (CORS) for your project.
+Enable CORS – Add CORS middleware for cross-origin support.
 
-Use Error Handler: Enable a basic error handler for managing errors.
+Use Error Handler – Setup custom error handling middleware.
 
-Use Environment File: Automatically generate a .env file for environment variables.
+Use .env File – Automatically generate an environment file.
 
-Use Morgan for Logging: Enable Morgan for HTTP request logging.
+Use Morgan – Add logging middleware for request logging.
 
-Use Docker: Set up Docker for deployment.
+Use Docker – Generate Dockerfile for containerization.
 
-Use ESLint: Set up ESLint for code linting to maintain code quality.
+Use ESLint – Add linting with customizable rules.
 
-Set Path Alias: Optionally configure @/ as a path alias in TypeScript.
+Path Alias (@/src) – Set up cleaner imports with TypeScript path aliases.
 
-Auto-install Dependencies: Automatically install dependencies once the setup is complete.
+Auto-install Dependencies – Automatically install everything after generation.
 
-After answering the prompts, create-exs will generate a fully configured Node.js backend project, ready for development.
-
-Project Structure
+🧱 Project Structure
 The generated project includes:
 
-Basic Express Setup: A ready-to-use Express server setup.
+✅ Express Server Setup
 
-Optional Configuration for MongoDB: MongoDB integration (if selected).
+📦 Optional MongoDB & GraphQL Integration
 
-GraphQL Setup: Optional configuration for setting up a GraphQL API (if selected).
+🧩 CORS & Error Handler Middleware
 
-CORS Configuration: Cross-Origin Resource Sharing setup for your backend.
+🐳 Dockerfile for container deployment
 
-Docker Support: A Dockerfile for containerized deployment.
+🔧 ESLint for code linting
 
-ESLint Configuration: Code linting setup to help maintain code quality.
+🔐 .env environment file
 
-Environment Variable Management: A .env file for managing sensitive environment variables.
+🔍 Morgan for logging
 
-Folder Structure: Organized project structure with optional support for TypeScript path aliases (e.g., @/ for the src directory).
+🗂️ Organized folder structure
 
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+⚡ @/ path alias for cleaner imports (TypeScript)
 
-Contributing
-Contributions are welcome! Feel free to fork this repository and open a pull request with your improvements or bug fixes. Here are a few ways you can contribute:
+📂 Example Workflow
+Install create-exs globally or use npx
 
-Submit bug fixes or enhancements.
+Run:
 
-Improve documentation.
 
-Add new features or configurations.
+npx create-exs
+Answer the prompts
 
-Author
+Done! Start developing 🚀
+
+🛠️ Contributing
+Contributions are welcome! Feel free to:
+
+🐛 Submit bug reports
+
+📘 Improve documentation
+
+🌟 Add new features
+
+Just fork the repo and open a PR.
+
+📄 License
+MIT License. See the LICENSE file for details.
+
+👤 Author
 Ayan Hasnain
-GitHub: @ayanhasnain03
-LinkedIn: Ayan Hasnain
 
-Example Workflow
-Install create-exs globally or locally in your project.
+Made with ❤️ for developers who love speed, flexibility, and clean code.
 
-Run npx create-exs to start the setup.
+vbnet
+Copy
+Edit
 
-Choose your configuration options such as language, tech stack, etc.
-
-Enjoy your fully-configured Node.js backend project.
-
-Feel free to make further customizations, and happy coding!
+Let me know if you'd like a version with custom badges, a GIF demo, or GitHub action shields too!
+```
