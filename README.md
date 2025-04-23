@@ -1,48 +1,53 @@
-# create-exs
+create-exs
+create-exs is a command-line tool designed to help you quickly scaffold a Node.js backend project with customizable configurations. It allows you to choose from a variety of technologies and features such as MongoDB, GraphQL, CORS, Docker, ESLint, and more. This tool streamlines the process of setting up a Node.js backend, reducing manual configurations and saving you time on repetitive tasks.
 
-**create-exs** is a command-line tool designed to quickly scaffold a Node.js backend project with customizable configurations. It offers support for technologies like MongoDB, GraphQL, CORS, Docker, ESLint, and more, based on your preferences. This CLI tool helps streamline the setup process and reduces manual configurations.
+Features
+Customizable Setup: Select which technologies and configurations to include in your project.
 
----
+Support for Popular Tech: MongoDB, GraphQL, CORS, ESLint, Docker, and more.
 
-## Installation
+Project Structure: Generate a well-organized project with best practices, including Docker and environment management.
 
-### Global Installation
-Install **create-exs** globally using npm:
+Fast and Efficient: Automate the process of setting up your backend with just a few simple prompts.
 
-```bash
+Installation
+You can install create-exs either globally or locally, depending on your needs.
+
+Global Installation
+To install create-exs globally on your machine, use the following command:
+
 npm install -g create-exs
 Local Installation
-Alternatively, install it locally within your project:
-
+Alternatively, you can install create-exs locally within your project:
 
 npm install create-exs
 Usage
-After installing, you can run the tool using:
+Once installed, you can scaffold a new project using the following command:
 
 npx create-exs
-The CLI will prompt you with several configuration questions to set up your Node.js backend project. You’ll choose options for:
+create-exs will prompt you with a series of configuration questions to help tailor the setup to your needs. During the setup, you'll choose options for:
 
 Project Name: Choose a name for your project.
 
 Preferred Language: Select between JavaScript or TypeScript.
 
-Use MongoDB: Decide if you want to integrate MongoDB.
+Use MongoDB: Decide if you want to integrate MongoDB for your database.
 
 Use GraphQL: Enable GraphQL for API development.
 
-Enable CORS: Configure Cross-Origin Resource Sharing.
+Enable CORS: Set up Cross-Origin Resource Sharing (CORS) for your project.
 
-Use Error Handler: Set up a basic error handler.
+Use Error Handler: Enable a basic error handler for managing errors.
 
-Use Environment File: Create a .env file for environment variables.
+Use Environment File: Automatically generate a .env file for environment variables.
 
 Use Morgan for Logging: Enable Morgan for HTTP request logging.
 
 Use Docker: Set up Docker for deployment.
 
-Use ESLint: Enable ESLint for code linting.
+Use ESLint: Set up ESLint for code linting to maintain code quality.
 
-Set Path Alias (@/ as src): Configure @/ as a path alias in TypeScript.
+Set Path Alias: Optionally configure @/ as a path alias in TypeScript.
 
 Auto-install Dependencies: Automatically install dependencies once the setup is complete.
 
@@ -51,29 +56,46 @@ After answering the prompts, create-exs will generate a fully configured Node.js
 Project Structure
 The generated project includes:
 
-A basic Express setup.
+Basic Express Setup: A ready-to-use Express server setup.
 
-Optional configuration for MongoDB, GraphQL, and CORS.
+Optional Configuration for MongoDB: MongoDB integration (if selected).
 
-Docker configuration for easy deployment.
+GraphQL Setup: Optional configuration for setting up a GraphQL API (if selected).
 
-ESLint configuration for code linting.
+CORS Configuration: Cross-Origin Resource Sharing setup for your backend.
 
-Environment variable management using a .env file.
+Docker Support: A Dockerfile for containerized deployment.
 
-A project folder structure with an option for a @/ path alias in TypeScript.
+ESLint Configuration: Code linting setup to help maintain code quality.
+
+Environment Variable Management: A .env file for managing sensitive environment variables.
+
+Folder Structure: Organized project structure with optional support for TypeScript path aliases (e.g., @/ for the src directory).
 
 License
-This project is licensed under the MIT License — see the LICENSE file for details.
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
 Contributing
-Contributions are welcome! Feel free to fork this repository and open a pull request with your improvements or bug fixes.
+Contributions are welcome! Feel free to fork this repository and open a pull request with your improvements or bug fixes. Here are a few ways you can contribute:
+
+Submit bug fixes or enhancements.
+
+Improve documentation.
+
+Add new features or configurations.
 
 Author
 Ayan Hasnain
+GitHub: @ayanhasnain03
+LinkedIn: Ayan Hasnain
 
-You can paste this content into your `README.md` file to provide comprehensive and attractive documentation for your CLI tool.
+Example Workflow
+Install create-exs globally or locally in your project.
 
+Run npx create-exs to start the setup.
 
+Choose your configuration options such as language, tech stack, etc.
 
+Enjoy your fully-configured Node.js backend project.
 
+Feel free to make further customizations, and happy coding!

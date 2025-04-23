@@ -1,13 +1,23 @@
 {
   "name": "create-exs",
   "version": "1.1.0",
-  "description": "",
+  "description": "A CLI tool to quickly scaffold a Node.js backend project with customizable configurations.",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "Node.js",
+    "CLI",
+    "backend",
+    "MongoDB",
+    "GraphQL",
+    "CORS",
+    "Docker",
+    "ESLint",
+    "Express"
+  ],
   "author": "@ayanhasnain03",
   "license": "MIT",
   "dependencies": {
@@ -18,7 +28,7 @@
     "ioredis": "^5.6.0",
     "ora": "^8.2.0"
   },
-"bin": {
-  "create-exs": "./index.js"
-}
+  "bin": {
+    "create-exs": "./index.js"
+  }
 }
